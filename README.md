@@ -17,3 +17,5 @@
 视图|NJKWebViewProgress|网页加载时候上面的蓝条|pod 'NJKWebViewProgress'
 视图|PopMenu|类似于新浪微博弹出的几个小圆圈|pod 'PopMenu'
 视图|ODRefreshControl|橡皮糖下拉刷新|https://github.com/Sephiroth87/ODRefreshControl
+视图|JBParallaxCell|视差效果的Cell|https://github.com/jberlana/JBParallaxCell
+视图|XHToast|类似于安卓的提示框|pod 'XHToast' https://github.com/CoderZhuXH/XHToast
