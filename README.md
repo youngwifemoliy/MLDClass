@@ -6,6 +6,7 @@
 ---|---|---|---
 视图 |POP|FaceBook的动画类|pod 'pop'
 视图 |MLDBaseButton|直接将创建的Button继承于此类可以知己做POP动画,需要POP的支持|
+视图|MLDAnimations|包含了八个方向的弹出按钮动画|
 视图 |MLDTableViewCell|同Button,继承出现POP动画|
 数据 |MJExtension|模型解析https://github.com/CoderMJLee/MJExtension|pod 'MJExtension'
 视图|SVProgressHUD|菊花|pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
@@ -19,3 +20,4 @@
 视图|ODRefreshControl|橡皮糖下拉刷新|https://github.com/Sephiroth87/ODRefreshControl
 视图|JBParallaxCell|视差效果的Cell|https://github.com/jberlana/JBParallaxCell
 视图|XHToast|类似于安卓的提示框|pod 'XHToast' https://github.com/CoderZhuXH/XHToast
+视图|QBImagePicker|本地图像|pod "QBImagePickerController" https://github.com/questbeat/QBImagePicker
