@@ -21,3 +21,8 @@
 视图|JBParallaxCell|视差效果的Cell|https://github.com/jberlana/JBParallaxCell
 视图|XHToast|类似于安卓的提示框|pod 'XHToast' https://github.com/CoderZhuXH/XHToast
 视图|QBImagePicker|本地图像|pod "QBImagePickerController" https://github.com/questbeat/QBImagePicker
+视图|LTNavigationBar|一个可以跟随视图改变颜色的导航|https://github.com/ltebean/LTNavigationBar
+视图|DZNEmptyDataSet|空白表视图的提示|pod 'DZNEmptyDataSet'  https://github.com/dzenbot/DZNEmptyDataSet
+视图|LGPhotoBrowser|弹出相册相机的控制器|https://github.com/gang544043963/LGPhotoBrowser
+视图|Photo|扩展了LGPhotoBrowser一个功能,可以删除alert提示用户用相册还是拍单张|
+视图|UIView-Shadow-Maker|可以给View某一条边加上阴影|https://github.com/Seitk/UIView-Shadow-Maker

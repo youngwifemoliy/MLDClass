@@ -31,13 +31,11 @@
                  action:@selector(scaleAnimation)
        forControlEvents:UIControlEventTouchUpInside];
     }
-
     return self;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
     [self addTarget:self action:@selector(scaleAnimation)
    forControlEvents:UIControlEventTouchUpInside];
 }
@@ -49,16 +47,6 @@
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.f, 1.f)];
     scaleAnimation.springBounciness = 18.0f;
     [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleSpringAnimation"];
-
 }
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-C2-Ej5">
+                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OBc-AZ-aC6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EMb-2l-KuI">
+                                <rect key="frame" x="0.0" y="356" width="375" height="311"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZvD-Vb-2aI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="310.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EMb-2l-KuI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6f7-uc-GgW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EMb-2l-KuI" secondAttribute="bottom" id="C9a-U0-ey9"/>
+                            <constraint firstAttribute="trailing" secondItem="EMb-2l-KuI" secondAttribute="trailing" id="Hao-U9-hBI"/>
+                            <constraint firstItem="EMb-2l-KuI" firstAttribute="top" secondItem="vmk-C2-Ej5" secondAttribute="bottom" constant="8" id="Wa3-Aw-qYI"/>
+                            <constraint firstItem="vmk-C2-Ej5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i9j-Bv-hBg"/>
+                            <constraint firstItem="vmk-C2-Ej5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pYx-oy-qet"/>
+                            <constraint firstItem="ZvD-Vb-2aI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pzm-Le-f43"/>
+                            <constraint firstAttribute="trailing" secondItem="ZvD-Vb-2aI" secondAttribute="trailing" id="rNo-zC-iuX"/>
+                            <constraint firstItem="vmk-C2-Ej5" firstAttribute="top" secondItem="ZvD-Vb-2aI" secondAttribute="bottom" constant="8" id="udo-gi-NUa"/>
+                            <constraint firstItem="ZvD-Vb-2aI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xph-km-q0A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="EMb-2l-KuI" id="gNh-dY-Ygu"/>
+                        <outlet property="topImageView" destination="ZvD-Vb-2aI" id="d8a-xn-ulg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
