@@ -8,7 +8,7 @@
 视图 |MLDBaseButton|直接将创建的Button继承于此类可以知己做POP动画,需要POP的支持|
 视图|MLDAnimations|包含了八个方向的弹出按钮动画|
 视图 |MLDTableViewCell|同Button,继承出现POP动画|
-数据 |MJExtension|模型解析https://github.com/CoderMJLee/MJExtension|pod 'MJExtension'
+数据 |MJExtension|模型解析|pod 'MJExtension'  https://github.com/CoderMJLee/MJExtension
 视图|SVProgressHUD|菊花|pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 视图|IQKeyboardManager|键盘弹出|pod 'IQKeyboardManager'
 网络|AFNetworking|网络请求|pod 'AFNetworking'
@@ -24,5 +24,7 @@
 视图|LTNavigationBar|一个可以跟随视图改变颜色的导航|https://github.com/ltebean/LTNavigationBar
 视图|DZNEmptyDataSet|空白表视图的提示|pod 'DZNEmptyDataSet'  https://github.com/dzenbot/DZNEmptyDataSet
 视图|LGPhotoBrowser|弹出相册相机的控制器|https://github.com/gang544043963/LGPhotoBrowser
-视图|Photo|扩展了LGPhotoBrowser一个功能,可以删除alert提示用户用相册还是拍单张|
+视图|MLDPhotoManager|扩展了LGPhotoBrowser一个功能,可以弹出alert提示选择用相册还是用相机拍单张|https://github.com/youngwifemoliy/MLDPhotoManager
 视图|UIView-Shadow-Maker|可以给View某一条边加上阴影|https://github.com/Seitk/UIView-Shadow-Maker
+视图|PYPhotoBrowser|快速集成一个类似于新浪九宫格照片一样的视图|pod "PYPhotoBrowser" https://github.com/iphone5solo/PYPhotoBrowser
+视图|UIImage-BlurredFrame|图片的毛玻璃效果|pod 'UIImage+BlurredFrame' https://github.com/Adrian2112/UIImage-BlurredFrame
