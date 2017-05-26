@@ -4,10 +4,12 @@
 
 类型|名称|说明|详情
 ---|---|---|---
-视图 |POP|FaceBook的动画类|pod 'pop'
+数据 |MLDUMengShare|copy到项目中直接复制调用即可|支持2017/5/26日的当时版本
+数据 |MLDShareSDK|copy到项目中直接复制调用即可|支持2017/5/26日的当时版本
 视图 |MLDBaseButton|直接将创建的Button继承于此类可以知己做POP动画,需要POP的支持|
 视图|MLDAnimations|包含了八个方向的弹出按钮动画|
 视图 |MLDTableViewCell|同Button,继承出现POP动画|
+视图 |POP|FaceBook的动画类|pod 'pop'
 数据 |MJExtension|模型解析|pod 'MJExtension'  https://github.com/CoderMJLee/MJExtension
 视图|SVProgressHUD|菊花|pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 视图|IQKeyboardManager|键盘弹出|pod 'IQKeyboardManager'
