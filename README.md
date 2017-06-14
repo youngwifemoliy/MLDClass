@@ -4,7 +4,7 @@
 
 类型|名称|说明|详情
 ---|---|---|---
-数据 |MLDUMengShare|copy到项目中直接复制调用即可|支持2017/5/26日的当时版本
+数据 |MLDUMengShare|copy到项目中直接复制调用即可|支持2017/5/26日的当时版本`6.4.4`
 数据 |MLDShareSDK|copy到项目中直接复制调用即可|支持2017/5/26日的当时版本
 视图 |MLDBaseButton|直接将创建的Button继承于此类可以知己做POP动画,需要POP的支持|
 视图|MLDAnimations|包含了八个方向的弹出按钮动画|
