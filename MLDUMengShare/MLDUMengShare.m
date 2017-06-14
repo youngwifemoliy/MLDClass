@@ -6,16 +6,17 @@
 //  Copyright © 2017年 North. All rights reserved.
 //
 
-#define UMengAppKey @"590aac982ae85b4b9d0000e9"
-#define WeiboAppkey @"3067827634"
-#define weiboSecret @"3e1d887cdcda815e1c54cbaa10e215c4"
+#define UMengAppKey @"58b3e246734be476b7000d2f"
 
-#define WXAppID @"wx35ae0d64b9945b87"
-#define WXAppSecret @"3fb15027cf3759ecbf8ad94db481ac56"
+#define WeiboAppkey @"1503724035"
+#define WeiboSecret @"4285acdb0e99927f55ede92e228eedd9"
+#define WeiboUrl @"http://www.uhisports.com/"
 
-#define QQAppKey @"1105611036"
-#define QQAppSecret @"cDxI9hws694WVJO0"
+#define WXAppID @"wx5d7a1e9d4f8edfb9"
+#define WXAppSecret @"d4624c36b6795d1d99dcf0547af5443d"
 
+#define QQAppKey @"1104867817"
+#define QQAppSecret @"1a8Co08u1GM0CGUN"
 
 #import "MLDUMengShare.h"
 
@@ -63,8 +64,8 @@
     /* 设置新浪的appKey和appSecret */
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina
                                           appKey:WeiboAppkey
-                                       appSecret:weiboSecret
-                                     redirectURL:@"https://api.weibo.com/oauth2/default.html"];
+                                       appSecret:WeiboSecret
+                                     redirectURL:WeiboUrl];
 }
 
 - (void)setupShareDataWithTitle:(NSString *)title
@@ -81,15 +82,57 @@
 - (void)showMLDUMengUI:(UIViewController *)viewController
 {
     [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_Sina),
-                                               @(UMSocialPlatformType_QQ),
-                                               @(UMSocialPlatformType_WechatSession)]];
+                                              @(UMSocialPlatformType_QQ),
+                                              @(UMSocialPlatformType_WechatSession)]];
     [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo)
      {
          // 根据获取的platformType确定所选平台进行下一步操作
-         [self shareWebPageToPlatformType:platformType
-                       withViewController:viewController];
+         if (self.shareUrl)
+         {
+             [self shareWebPageToPlatformType:platformType
+                           withViewController:viewController];
+         }
+         else
+         {
+             [self shareImageToPlatformType:platformType
+                         withViewController:viewController];
+         }
      }];
 }
+
+- (void)shareImageToPlatformType:(UMSocialPlatformType)platformType
+              withViewController:(UIViewController *)viewController
+{
+    //创建分享消息对象
+    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
+    
+    //创建图片内容对象
+    UMShareImageObject *shareObject = [[UMShareImageObject alloc] init];
+    //如果有缩略图，则设置缩略图
+    shareObject.thumbImage = [UIImage imageNamed:@"shareIcon"];
+    [shareObject setShareImage:self.shareImage];
+    
+    //分享消息对象设置分享内容对象
+    messageObject.shareObject = shareObject;
+    
+    //调用分享接口
+    [[UMSocialManager defaultManager] shareToPlatform:platformType
+                                        messageObject:messageObject
+                                currentViewController:viewController
+                                           completion:^(id data, NSError *error)
+     {
+        if (error)
+        {
+            NSLog(@"************Share fail with error %@*********",error);
+        }
+        else
+        {
+            NSLog(@"response data is %@",data);
+        }
+    }];
+}
+
+
 
 - (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
                 withViewController:(UIViewController *)viewController
