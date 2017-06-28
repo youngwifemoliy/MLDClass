@@ -31,6 +31,7 @@
 视图|PYPhotoBrowser|快速集成一个类似于新浪九宫格照片一样的视图|pod "PYPhotoBrowser" https://github.com/iphone5solo/PYPhotoBrowser
 视图|UIImage-BlurredFrame|图片的毛玻璃效果|pod 'UIImage+BlurredFrame' https://github.com/Adrian2112/UIImage-BlurredFrame
 视图|PYSearch|搜索历史框架|https://github.com/iphone5solo/PYSearch
+通知|JDStatusBarNotification|状态栏/导航栏通知框|pod 'JDStatusBarNotification' https://github.com/calimarkus/JDStatusBarNotification
 
 
 # 在这里找到我
